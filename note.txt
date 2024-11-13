@@ -1,0 +1,91 @@
+node and express-module v
+--------------------------
+
+MCV Architeture
+---------------
+M-Model: It represents the structure in which data is stored
+C-Controller: is used to set logic to ressolve the request
+V-View- user interFace-where the user interact with the application
+
+Routing : To set the path to resolve the request.(to channalize the request coming to the server side )
+
+DATABASE : Where data is Stored
+
+Node
+----
+-not a programming language
+-it provides a enviroment to run the javascript outside the browser
+-v8 engine js - Google
+
+Node Modules
+------------
+modules are files/js libraries that can be used in node js applications to provide certain functionalities
+
+if we want to include module we need to import them
+require()- used to import the module
+module.export - to export the module
+
+Types of Modules
+----------------
+1)Custom modules
+2)Builtin Modules
+
+Builtin Modules : 
+---------------
+1)File system modules
+-Allows to works with the files inside your System
+-Operations :
+1)Read File - readFile()
+2)Write - writeFile()
+3)Update - writeFile()
+4) Delete - unlink()
+5) Rename - rename()
+
+2) Http Module
+-used to create a http  server that can listen to a server port and give a response back to a client
+-handles http request
+create - create Server
+listen - listen()
+
+3)https modules 
+
+4)Event Modules 
+----------------
+-To create Events 
+-with the help of EventEmitter class
+-On()-to create
+-emit()- to invoke the events
+
+Enviroment variable
+-------------------
+-predefined values that are typically used to provide the ability to configuire a value in your code from outside of your application
+
+Express
+-------
+-Framework of node.js
+
+steps to setup a server using express
+-------------------------------------
+1)create a folder for the server
+2)create package.json : npm init -y
+3)install packages express,dotenv,  cors, mongoose
+  npm i express - to download express
+  npm i dotenv 
+  npm i cors
+  npm i mongoose
+
+  npm i express cors mongoose dotenv
+
+  cors = cross orgin resource sharing
+   to connect frontend with the server to enable communication
+
+   dontenv
+   -------
+   to load enviromentvaribales config( ) is used to do so.
+   -loads.env file contetnt into process.env by default
+
+   Mongoose
+   ----------
+   -used to connect server with DATABASE
+   -connect() : to connect to the database
+
